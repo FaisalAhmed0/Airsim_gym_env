@@ -44,6 +44,10 @@ The reward is the negative l2 distance to goal (Again it can be modifed), this j
     Unity game Engine and Airsim simulator should be installed  for detailed instruction see the website:
     https://microsoft.github.io/AirSim/Unity/
     To install the environment run the command pip install -e . inside the gym-airsim directory 
+## References:
+    https://microsoft.github.io/AirSim/
+    https://arxiv.org/abs/1705.05065
+    http://gym.openai.com/docs/
 
 
     
