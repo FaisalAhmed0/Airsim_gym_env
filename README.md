@@ -41,7 +41,7 @@ We choose a simple objective as a specific point in the 3D space but it can be m
  
 The reward is the negative l2 distance to goal squared (Again it can be modifed), this just a test reward to ensure the environment is working properly.
 
-![equation](https://latex.codecogs.com/gif.latex?r%20%3D%20%5Cvert%20%5Cvert%20Quad.%20Position%20-%20goal%20%5Cvert%20%5Cvert_%7Bl2%7D)
+![equation](<img src="https://latex.codecogs.com/gif.latex?r&space;=&space;-&space;||Quad.Position&space;-&space;goal||_{l2}^2" title="r = - ||Quad.Position - goal||_{l2}^2" />)
 
 ## Depndensices:
     Unity game Engine and Airsim simulator should be installed  for detailed instruction see the website:
