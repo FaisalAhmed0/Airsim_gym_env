@@ -8,32 +8,30 @@ import math
 ''' 
         Observation: 
         Type: Box(12)
-        Num Observation                Min            Max
-        0   Quad postion x            -Inf            Inf
-        1   Quad postion y            -Inf            Inf
-        2   Quad postion z            -Inf            Inf
-        3   Quad Velocity x           -Inf            Inf
-        4   Quad Velocity y           -Inf            Inf
-        5   Quad Velocity z           -Inf            Inf
-        6   Quad Orientation roll     -pi/2           pi/2
-        7   Quad Orientation pitch    -pi/2           pi/2
-        8   Quad Orientation yaw      -pi/2           pi/2
-        9  Quad Angular_velocity x    -Inf            Inf
-        10  Quad Angular_velocity y   -Inf            Inf
-        11  Quad Angular_velocity z   -Inf            Inf
+        Num Observation                
+        0   Quad postion x            
+        1   Quad postion y            
+        2   Quad postion z            
+        3   Quad Velocity x           
+        4   Quad Velocity y           
+        5   Quad Velocity z           
+        6   Quad Orientation roll     
+        7   Quad Orientation pitch    
+        8   Quad Orientation yaw      
+        9  Quad Angular_velocity x    
+        10  Quad Angular_velocity y   
+        11  Quad Angular_velocity z   
+        12 Distance to Goal           
+        13 angle of the goal          
         
     Actions:
         Type: Box(4)                   
-        Num Action                     Min            Max   
-        0   roll rate                  -1             +1
-        1   pitch rate                 -1             +1
-        2   yaw rate                   -1             +1
-        0   throttle                    0             +1
+        Num Action                     
+        0   roll rate                  
+        1   pitch rate                 
+        2   yaw rate                  
 
-    Goal positon: (8,5,16)
-    This goal in Unity Frame of reference   
-
-    Maximum time steps = 300    
+    
 '''
 class AirsimEnv(gym.Env):  
     def __init__(self):
@@ -376,18 +374,6 @@ class AirsimEnv(gym.Env):
         goals_quad_frame[2] = np.clip(goals_quad_frame[2], -10, -4)
         return goals_quad_frame
 
-    # def GenerateGoal(self, range_min = 8, range_max = 10):
-    #     count = 1
-    #     d = np.random.uniform(low=-1,high=1,size=(3,)) * count
-    #     dis = np.sqrt(d[0]**2 + d[1]**2+ d[2]**2)
-    #     while not (dis >= range_min and dis <= range_max):
-    #         d = np.random.uniform(low=-1,high=1,size=(3,)) * count
-    #         dis = np.sqrt(d[0]**2 + d[1]**2+ d[2]**2)
-    #         if dis < range_min:
-    #             count += 1
-    #         else:
-    #             count -= 1
-    #     return d
     def GenerateGoal(self, range_min =5 ,range_max = 10, init_point=[0,0,0]):
         count = 1.
         num_iter = 0
