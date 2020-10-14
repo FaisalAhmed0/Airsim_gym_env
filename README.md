@@ -35,14 +35,6 @@
         2   yaw rate
 
 
-We choose a simple objective as a specific point in the 3D space but it can be modified in the environment source code, additionally the goal is specifid according to unity frame of reference because the user can easily see this in the screenm then it transformed to the quadrotor frame of reference via the Rotation matrix.
-    
-![equation](https://latex.codecogs.com/gif.latex?R%20%3D%20%5Cbegin%7Bpmatrix%7D%200%20%26%200%20%26%201%5C%5C%201%20%26%200%20%26%200%5C%5C%200%20%26-1%20%26%200%20%5Cend%7Bpmatrix%7D)
- 
-The reward is the negative l2 distance to goal squared (Again it can be modifed), this just a test reward to ensure the environment is working properly.
-
-![equation](https://latex.codecogs.com/gif.latex?r%20%3D%20-%20%7C%7CQuad.Position%20-%20goal%7C%7C_%7Bl2%7D%5E2)
-
 ## Depndensices:
     Unity game Engine and Airsim simulator should be installed  for detailed instruction see the website:
     https://microsoft.github.io/AirSim/Unity/
