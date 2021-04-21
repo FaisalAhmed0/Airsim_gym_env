@@ -1,7 +1,8 @@
 ## Description:
     This Environment is a gym API that wraps Microsoft_airsim for unity.
     It is implemented specifically for learning mapless navigation and stability while flying,
-    but it can be modified easily for other purposes, this video shows the envinrment with hand engineered controller https://www.youtube.com/watch?v=euKBlw2TQq8
+    but it can be modified easily for other purposes, this video shows the envinrment with hand engineered controller 
+    https://www.youtube.com/watch?v=euKBlw2TQq8
 
 ## Observation Space:
     Observation: 
