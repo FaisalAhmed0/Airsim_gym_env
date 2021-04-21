@@ -39,7 +39,7 @@ The Action vector consist of 3 continuous components
 
 ## Depndensices:
 Unity game Engine and Airsim simulator should be installed  for detailed instruction see the website:
-[https://microsoft.github.io/AirSim/Unity/]
+https://microsoft.github.io/AirSim/Unity/
 To install the environment run the command pip install -e . inside the gym-airsim directory 
 
 
