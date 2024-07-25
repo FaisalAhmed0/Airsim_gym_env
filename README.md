@@ -6,6 +6,7 @@ but it can be modified easily for other purposes, [this video](https://www.youtu
     
 
 ## Observation Space:
+```
 Observation: 
     Type: Box(14)
     Num Observation                
@@ -23,11 +24,12 @@ Observation:
     11  Quad Angular_velocity z   
     12 Distance to Goal           
     13 angle of the goal          
-               
+ ```              
 The Orientations are originally recivied as a quaternioin vector from the airsim API 
 then transformed to roll, pitch, and yaw for thier easier interpretability.
 
 ## Action space:
+```
 The Action vector consist of 3 continuous components
     Actions:
     Type: Box(3)                   
@@ -35,7 +37,7 @@ The Action vector consist of 3 continuous components
     0   roll rate                  
     1   pitch rate                 
     2   yaw rate
-
+```
 
 ## Depndensices:
 Unity game Engine and Airsim simulator should be installed  for detailed instruction see the website:
